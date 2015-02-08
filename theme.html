@@ -64,6 +64,10 @@
         <div class="gradient"></div>
         <div class="title">
           <h1>{{ site.name }}</h1>
+          <ul class="categories">
+            <li><a href="/tag/development" class="{{ set_active('/tag/development')}">Development</a></li>
+
+          </ul>
           <ul class="social">
         
             {% if site.twitter %}
@@ -97,7 +101,6 @@
               </a>
             </li>
             {% endif %}
-            <li><a href="/tag/development" class="{{ set_active('/tag/development')}">Development</a></li>
             <li>
               <a href="{{ site.atom_url }}" title="RSS" target="_blank">
                 <i class="icon-rss"></i> RSS
