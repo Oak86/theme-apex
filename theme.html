@@ -190,6 +190,12 @@
             {{ theme.social.bar }}
 
             {% if post.tags %}
+            <nav class="categories">
+              <h4>Categories</h4>
+              <ul>
+                <li><a href="/tag/development" class="{{ set_active('/tag/development')}">Development</a></li>
+              </ul>
+            </nav>
             <ul class="post-tags">
             {% for tag in post.tags %}
               <li><a href="/tag/{{ tag }}">{{ tag|format_tag(link=False, humanize=True) }}</a></li>
